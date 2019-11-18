@@ -7,13 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Cidades</h1>
 
-    <h1>Pagina Home</h1>
-
-    @foreach($listaUsuarios as $usuario)
-        <h2>{{$usuario->nome}}</h2>
+    @foreach($listaCidades as $cidade)
+        <h2>{{$cidade->nome}}</h2>
     @endforeach
-
-
+    
 </body>
 </html>

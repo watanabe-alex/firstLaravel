@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@viewHome');
+
+Route::get('/cidades', 'CidadeController@viewCidades');
