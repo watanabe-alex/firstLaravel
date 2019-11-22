@@ -20,4 +20,20 @@ class HomeController extends Controller
         return view('home',["listaUsuarios"=>$listaUsuarios]);
     }
 
+    public function request(Request $request, $id=0) {
+        if ($id==0) {
+            echo "Passa alguma coisa aí, rapaz!";
+        } else {
+            dd($id);
+        }
+    }
+
+    public function exibirFormulario() {
+        return view('formulario');
+    }
+
+    public function cadastrarFormulario(Request $request) {
+        dd($request->nome);
+    }
+
 }

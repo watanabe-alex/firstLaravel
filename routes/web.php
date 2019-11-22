@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@viewHome');
 
 Route::get('/cidades', 'CidadeController@viewCidades');
+
+//interrogação significa que o parâmetro é opcional
+Route::get('/request/id/{id?}','HomeController@request');
+
+Route::get('/formulario', 'HomeController@exibirFormulario');
+Route::post('/formulario', 'HomeController@cadastrarFormulario');
